@@ -1,28 +1,64 @@
 """
-core/analyzer.py
+```python
+# =============================================================================
+# analyze_site.py
+# =============================================================================
+#
+# Módulo principal de análise técnica de acessibilidade digital (WCAG 2.1/2.2).
+#
+# VISÃO GERAL
+# -----------
+# Utiliza Playwright + axe-core para executar análises em navegador real,
+# garantindo resultados confiáveis sobre o HTML renderizado e com suporte
+# a JavaScript moderno.
+#
+# ESTRUTURA DO MÓDULO
+# -------------------
+# 1. Configuração Inicial
+#    Ajusta a política de loop de eventos para compatibilidade com Windows
+#    (WindowsProactorEventLoopPolicy), assegurando suporte a subprocessos.
+#
+# 2. Pesos e Penalidades (PESOS_WCAG)
+#    Define os 8 indicadores WCAG priorizados e seus respectivos pesos.
+#    A função _get_volume_multiplier() aplica penalidade escalonada conforme
+#    o volume de violações (multiplicador de 1.0 até 2.5).
+#
+# 3. Mapeamento de Violações (_map_axe_violations)
+#    Transforma o resultado bruto do axe-core em evidências estruturadas,
+#    contendo: html_snippet, seletor, impacto, descrição, sumário de falha
+#    e campos adicionais prontos para geração de relatórios.
+#    Apenas regras presentes em PESOS_WCAG são processadas.
+#
+# 4. Função Principal (analyze_site)
+#    Orquestra a análise em três etapas:
+#    - Navegação real via Playwright + Chromium headless
+#    - Injeção e execução do axe-core no DOM renderizado
+#    - Cálculo do score com penalidade escalonada (cap máximo: 85 pontos)
+#
+# 5. Retorno Estruturado
+#    Retorna score, evidências detalhadas e um bloco 'summary' com contagens
+#    por indicador, breakdown de penalidade por regra e flag 'cap_applied'.
+#
+# 6. Tratamento de Erros
+#    Erros de navegação, falhas do Playwright e exceções inesperadas são
+#    capturados e retornados em formato padronizado (status + error_message),
+#    sem interromper o fluxo da aplicação.
+#
+# INDICADORES AVALIADOS
+# ---------------------
+#    - meta-viewport            (peso: 0.19)
+#    - color-contrast           (peso: 0.17)
+#    - label                    (peso: 0.15)
+#    - aria-input-field-name    (peso: 0.13)
+#    - target-size              (peso: 0.13)
+#    - color-contrast-enhanced  (peso: 0.10)
+#    - target-size-enhanced     (peso: 0.08)
+#    - autocomplete-valid       (peso: 0.05)
+#
+# =============================================================================
+```
 
-Responsável por:
-- Extração de dados via Playwright + axe-core (motor WCAG autoritativo e preciso)
-- Mapeamento e extração enriquecida de evidências por violação
-  (html_snippet do elemento, seletor, impact, help, failureSummary, etc.)
-- Análise técnica WCAG **apenas** com os 8 indicadores definidos em PESOS_WCAG
-- Cálculo de score com penalidade escalonada por volume de evidências (mesma lógica original)
-- Retorno estruturado com 'evidences' (cada uma com trecho HTML extraído) + 'summary'
-  pronto para relatórios de resultados e relatório final
-  (contagens por tipo de violação, breakdown de penalidade, etc.)
 
-Integração:
-- Mantido 100% o motor Playwright + axe-core do Código 1 (mais preciso que heurísticas).
-- Enriquecida a extração de trechos/evidências inspirada na estrutura do Código 3
-  (campos "tipo", "elemento", "detalhe" + mais metadados do axe para cada ocorrência).
-- NÃO foram incorporados os extratores heurísticos do Código 2/3 nem novos indicadores
-  (urgência artificial, confirmshaming, etc.) — conforme mandatório de usar SOMENTE
-  os indicadores WCAG do Código 1.
-- Código 2 (fetch com requests + BS4) não foi usado porque Playwright já fornece
-  HTML renderizado + contexto JS superior para sites modernos.
-- Resultado: análise WCAG confiável + evidências ricas para relatórios + score idêntico.
-
-NOTA: Removidos prints DEBUG temporários. Versão limpa para produção.
 """
 
 import sys
