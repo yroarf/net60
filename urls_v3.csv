@@ -1,0 +1,134 @@
+url,nome_site,tipo,cidade,uf,populacao
+https://www.df.gov.br,Brasília,Capital,Brasília,DF,3120000
+https://www.goiania.go.gov.br,Goiânia,Capital,Goiânia,GO,1550000
+https://www.prefeitura.sp.gov.br,São Paulo,Capital,São Paulo,SP,11450000
+https://www.pmf.sc.gov.br,Florianópolis,Capital,Florianópolis,SC,540000
+https://www.portovelho.ro.gov.br,Porto Velho,Capital,Porto Velho,RO,550000
+https://www.belem.pa.gov.br,Belém,Capital,Belém,PA,1500000
+https://www.fortaleza.ce.gov.br,Fortaleza,Capital,Fortaleza,CE,2700000
+https://www.saoluis.ma.gov.br,São Luís,Capital,São Luís,MA,1100000
+https://www.natal.rn.gov.br,Natal,Capital,Natal,RN,950000
+https://www.salvador.ba.gov.br,Salvador,Capital,Salvador,BA,2900000
+https://www.vitoria.es.gov.br,Vitória,Capital,Vitória,ES,370000
+https://www.campogrande.ms.gov.br,Campo Grande,Capital,Campo Grande,MS,920000
+https://www.curitiba.pr.gov.br,Curitiba,Capital,Curitiba,PR,1950000
+https://www.manaus.am.gov.br,Manaus,Capital,Manaus,AM,2300000
+https://www.ribeiraopreto.sp.gov.br,Ribeirão Preto,>100k,Ribeirão Preto,SP,720000
+https://www.uberlandia.mg.gov.br,Uberlândia,>100k,Uberlândia,MG,710000
+https://www.sorocaba.sp.gov.br,Sorocaba,>100k,Sorocaba,SP,695000
+https://www.londrina.pr.gov.br,Londrina,>100k,Londrina,PR,580000
+https://www.joinville.sc.gov.br,Joinville,>100k,Joinville,SC,620000
+https://www.niteroi.rj.gov.br,Niterói,>100k,Niterói,RJ,520000
+https://www.saobernardo.sp.gov.br,São Bernardo do Campo,>100k,São Bernardo do Campo,SP,850000
+https://www.santoandre.sp.gov.br,Santo André,>100k,Santo André,SP,730000
+https://www.juizdefora.mg.gov.br,Juiz de Fora,>100k,Juiz de Fora,MG,580000
+https://www.piracicaba.sp.gov.br,Piracicaba,>100k,Piracicaba,SP,420000
+https://www.bauru.sp.gov.br,Bauru,>100k,Bauru,SP,380000
+https://www.maringa.pr.gov.br,Maringá,>100k,Maringá,PR,430000
+https://www.montesclaros.mg.gov.br,Montes Claros,>100k,Montes Claros,MG,420000
+https://www.anapolis.go.gov.br,Anápolis,>100k,Anápolis,GO,400000
+https://www.blumenau.sc.gov.br,Blumenau,>100k,Blumenau,SC,380000
+https://www.petropolis.rj.gov.br,Petrópolis,>100k,Petrópolis,RJ,310000
+https://www.cascavel.pr.gov.br,Cascavel,>100k,Cascavel,PR,340000
+https://www.saocarlos.sp.gov.br,São Carlos,>100k,São Carlos,SP,260000
+https://www.franca.sp.gov.br,Franca,>100k,Franca,SP,360000
+https://www.guaruja.sp.gov.br,Guarujá,>100k,Guarujá,SP,320000
+https://www.taubate.sp.gov.br,Taubaté,>100k,Taubaté,SP,320000
+https://www.limeira.sp.gov.br,Limeira,>100k,Limeira,SP,310000
+https://www.itabuna.ba.gov.br,Itabuna,>100k,Itabuna,BA,220000
+https://www.feiradesantana.ba.gov.br,Feira de Santana,>100k,Feira de Santana,BA,620000
+https://www.vitoria.ba.gov.br,Vitória da Conquista,>100k,Vitória da Conquista,BA,350000
+https://www.caxias.rs.gov.br,Caxias do Sul,>100k,Caxias do Sul,RS,520000
+https://www.pelotas.rs.gov.br,Pelotas,>100k,Pelotas,RS,350000
+https://www.santamaria.rs.gov.br,Santa Maria,>100k,Santa Maria,RS,280000
+https://www.sjp.pr.gov.br,São José dos Pinhais,>100k,São José dos Pinhais,PR,280000
+https://www.fozdoiguacu.pr.gov.br,Foz do Iguaçu,>100k,Foz do Iguaçu,PR,260000
+https://www.pontagrossa.pr.gov.br,Ponta Grossa,>100k,Ponta Grossa,PR,360000
+https://www.aracatuba.sp.gov.br,Araçatuba,>100k,Araçatuba,SP,200000
+https://www.presidenteprudente.sp.gov.br,Presidente Prudente,>100k,Presidente Prudente,SP,230000
+https://www.marilia.sp.gov.br,Marília,>100k,Marília,SP,240000
+https://www.americana.sp.gov.br,Americana,>100k,Americana,SP,250000
+https://www.indaiatuba.sp.gov.br,Indaiatuba,>100k,Indaiatuba,SP,260000
+https://www.jacarei.sp.gov.br,Jacareí,>100k,Jacareí,SP,240000
+https://www.jundiai.sp.gov.br,Jundiaí,>100k,Jundiaí,SP,450000
+https://www.mogidascruzes.sp.gov.br,Mogi das Cruzes,>100k,Mogi das Cruzes,SP,450000
+https://www.suzano.sp.gov.br,Suzano,>100k,Suzano,SP,310000
+https://www.taboaodaserra.sp.gov.br,Taboão da Serra,>100k,Taboão da Serra,SP,290000
+https://www.barueri.sp.gov.br,Barueri,>100k,Barueri,SP,280000
+https://www.carapicuiba.sp.gov.br,Carapicuíba,>100k,Carapicuíba,SP,400000
+https://www.osasco.sp.gov.br,Osasco,>100k,Osasco,SP,700000
+https://www.diadema.sp.gov.br,Diadema,>100k,Diadema,SP,430000
+https://www.maua.sp.gov.br,Mauá,>100k,Mauá,SP,480000
+https://www.saocaetanodosul.sp.gov.br,São Caetano do Sul,>100k,São Caetano do Sul,SP,160000
+https://www.itu.sp.gov.br,Itu,30k-100k,Itu,SP,180000
+https://www.atibaia.sp.gov.br,Atibaia,30k-100k,Atibaia,SP,160000
+https://www.braganca.sp.gov.br,Bragança Paulista,30k-100k,Bragança Paulista,SP,170000
+https://www.valinhos.sp.gov.br,Valinhos,30k-100k,Valinhos,SP,130000
+https://www.vinhedo.sp.gov.br,Vinhedo,30k-100k,Vinhedo,SP,85000
+https://www.louveira.sp.gov.br,Louveira,30k-100k,Louveira,SP,52000
+https://www.itatiba.sp.gov.br,Itatiba,30k-100k,Itatiba,SP,120000
+https://www.araraquara.sp.gov.br,Araraquara,30k-100k,Araraquara,SP,240000
+https://www.jau.sp.gov.br,Jaú,30k-100k,Jaú,SP,150000
+https://www.botucatu.sp.gov.br,Botucatu,30k-100k,Botucatu,SP,150000
+https://www.assis.sp.gov.br,Assis,30k-100k,Assis,SP,105000
+https://www.ourinhos.sp.gov.br,Ourinhos,30k-100k,Ourinhos,SP,115000
+https://www.catanduva.sp.gov.br,Catanduva,30k-100k,Catanduva,SP,120000
+https://www.votuporanga.sp.gov.br,Votuporanga,30k-100k,Votuporanga,SP,95000
+https://www.barretos.sp.gov.br,Barretos,30k-100k,Barretos,SP,125000
+https://www.bebedouro.sp.gov.br,Bebedouro,30k-100k,Bebedouro,SP,80000
+https://www.lins.sp.gov.br,Lins,30k-100k,Lins,SP,78000
+https://www.penapolis.sp.gov.br,Penápolis,30k-100k,Penápolis,SP,65000
+https://www.pocosdecaldas.mg.gov.br,Poços de Caldas,30k-100k,Poços de Caldas,MG,170000
+https://www.pousoalegre.mg.gov.br,Pouso Alegre,30k-100k,Pouso Alegre,MG,155000
+https://www.varginha.mg.gov.br,Varginha,30k-100k,Varginha,MG,135000
+https://www.lavras.mg.gov.br,Lavras,30k-100k,Lavras,MG,105000
+https://www.divinopolis.mg.gov.br,Divinópolis,30k-100k,Divinópolis,MG,240000
+https://www.uba.mg.gov.br,Ubá,30k-100k,Ubá,MG,115000
+https://www.muriae.mg.gov.br,Muriaé,30k-100k,Muriaé,MG,110000
+https://www.manhuacu.mg.gov.br,Manhuaçu,30k-100k,Manhuaçu,MG,95000
+https://www.teofilootoni.mg.gov.br,Teófilo Otoni,30k-100k,Teófilo Otoni,MG,140000
+https://www.valadares.mg.gov.br,Governador Valadares,30k-100k,Governador Valadares,MG,280000
+https://www.holambra.sp.gov.br,Holambra,<30k,Holambra,SP,15000
+https://www.serranegrasp.com.br,Serra Negra,<30k,Serra Negra,SP,29000
+https://www.aguasdelindoia.sp.gov.br,Águas de Lindóia,<30k,Águas de Lindóia,SP,18000
+https://www.socorro.sp.gov.br,Socorro,<30k,Socorro,SP,42000
+https://www.joanopolis.sp.gov.br,Joanópolis,<30k,Joanópolis,SP,12000
+https://www.nazarepaulista.sp.gov.br,Nazaré Paulista,<30k,Nazaré Paulista,SP,18000
+https://www.piracaia.sp.gov.br,Piracaia,<30k,Piracaia,SP,28000
+https://www.bomjesusdosperdoes.sp.gov.br,Bom Jesus dos Perdões,<30k,Bom Jesus dos Perdões,SP,22000
+https://www.tuiuti.sp.gov.br,Tuiuti,<30k,Tuiuti,SP,7000
+https://www.pedrabela.sp.gov.br,Pedra Bela,<30k,Pedra Bela,SP,5000
+https://www.vargem.sp.gov.br,Vargem,<30k,Vargem,SP,10000
+https://www.morungaba.sp.gov.br,Morungaba,<30k,Morungaba,SP,13000
+https://www.jarinu.sp.gov.br,Jarinu,<30k,Jarinu,SP,32000
+https://www.campolimpopaulista.sp.gov.br,Campo Limpo Paulista,<30k,Campo Limpo Paulista,SP,85000
+https://www.cajamar.sp.gov.br,Cajamar,<30k,Cajamar,SP,80000
+https://www.francodarocha.sp.gov.br,Franco da Rocha,<30k,Franco da Rocha,SP,150000
+https://www.franciscomorato.sp.gov.br,Francisco Morato,<30k,Francisco Morato,SP,180000
+https://www.caieiras.sp.gov.br,Caieiras,<30k,Caieiras,SP,95000
+https://www.mairipora.sp.gov.br,Mairiporã,<30k,Mairiporã,SP,100000
+https://www.aruja.sp.gov.br,Arujá,<30k,Arujá,SP,90000
+https://www.santaisabel.sp.gov.br,Santa Isabel,<30k,Santa Isabel,SP,58000
+https://www.guararema.sp.gov.br,Guararema,<30k,Guararema,SP,30000
+https://www.salesopolis.sp.gov.br,Salesópolis,<30k,Salesópolis,SP,17000
+https://www.biritibamirim.sp.gov.br,Biritiba-Mirim,<30k,Biritiba-Mirim,SP,33000
+https://www.poa.sp.gov.br,Poá,<30k,Poá,SP,115000
+https://www.ferrazdevasconcelos.sp.gov.br,Ferraz de Vasconcelos,<30k,Ferraz de Vasconcelos,SP,180000
+https://www.itaquaquecetuba.sp.gov.br,Itaquaquecetuba,<30k,Itaquaquecetuba,SP,380000
+https://www.rioclaro.sp.gov.br,Rio Claro,<30k,Rio Claro,SP,200000
+https://www.pirassununga.sp.gov.br,Pirassununga,<30k,Pirassununga,SP,78000
+https://www.portoferreira.sp.gov.br,Porto Ferreira,<30k,Porto Ferreira,SP,55000
+https://www.descalvado.sp.gov.br,Descalvado,<30k,Descalvado,SP,34000
+https://www.saopedro.sp.gov.br,São Pedro,<30k,São Pedro,SP,36000
+https://www.brotas.sp.gov.br,Brotas,<30k,Brotas,SP,24000
+https://www.agudos.sp.gov.br,Agudos,<30k,Agudos,SP,38000
+https://www.lencoispaulista.sp.gov.br,Lençóis Paulista,<30k,Lençóis Paulista,SP,68000
+https://www.macatuba.sp.gov.br,Macatuba,<30k,Macatuba,SP,18000
+https://www.igaracudotiete.sp.gov.br,Igaraçu do Tietê,<30k,Igaraçu do Tietê,SP,25000
+https://www.barrabonita.sp.gov.br,Barra Bonita,<30k,Barra Bonita,SP,56000
+https://www.doiscorregos.sp.gov.br,Dois Córregos,<30k,Dois Córregos,SP,25000
+https://www.ibitinga.sp.gov.br,Ibitinga,<30k,Ibitinga,SP,60000
+https://www.itapolis.sp.gov.br,Itápolis,<30k,Itápolis,SP,43000
+https://www.novohorizonte.sp.gov.br,Novo Horizonte,<30k,Novo Horizonte,SP,40000
+https://www.promissao.sp.gov.br,Promissão,<30k,Promissão,SP,38000
+https://www.penapolis.sp.gov.br,Penápolis,<30k,Penápolis,SP,65000
