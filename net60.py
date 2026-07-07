@@ -23,6 +23,41 @@ st.set_page_config(
     page_icon="👴🏻",
     layout="wide",
 )
+import os
+import subprocess
+import streamlit as st
+
+# ============================================================
+# INSTALAÇÃO DO NAVEGADOR PLAYWRIGHT (necessário no Streamlit Cloud)
+# ============================================================
+def ensure_playwright_browser():
+    """Tenta instalar o Chromium se ele não existir (útil no deploy em nuvem)."""
+    playwright_path = os.path.expanduser("~/.cache/ms-playwright")
+    
+    # Verifica se já existe algum chromium instalado
+    if os.path.exists(playwright_path):
+        chromium_dirs = [d for d in os.listdir(playwright_path) if "chromium" in d.lower()]
+        if chromium_dirs:
+            return  # Já está instalado
+
+    try:
+        with st.spinner("Instalando navegador Chromium (primeira execução)..."):
+            subprocess.run(
+                ["playwright", "install", "chromium"],
+                check=True,
+                capture_output=True,
+                text=True,
+                timeout=300  # 5 minutos
+            )
+            st.success("Navegador Chromium instalado com sucesso!")
+    except subprocess.TimeoutExpired:
+        st.error("Tempo esgotado ao instalar o Chromium. Tente novamente ou use outra plataforma.")
+    except Exception as e:
+        st.error(f"Erro ao instalar o navegador: {str(e)}")
+
+
+# Chame essa função no início da aplicação
+ensure_playwright_browser()
 
 if "urls_to_analyze" not in st.session_state:
     st.session_state["urls_to_analyze"] = []
