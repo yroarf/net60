@@ -116,20 +116,9 @@ with st.sidebar:
 Ferramenta baseada em **WCAG 2.2** que utiliza o motor **axe-core** executado em navegador real via Playwright.
 
 **Indicadores Avaliados**
-net60
-Análise técnica de acessibilidade digital para o público idoso
-
-Ferramenta baseada em WCAG 2.2 que utiliza o motor axe-core executado em navegador real via Playwright.
-
-Indicadores Avaliados
-
 color-contrast : contraste_textos_botoes_icones_links (1.4.3 - AA)
 label : prevencao_descricao_erros (3.3.2 - A)
 meta-viewport : redimensionamento_reflow ( 1.4.10 - AA)
-
-Metodologia Pontuação calculada por penalidade escalonada, considerando não apenas a existência, mas também o volume de violações — gerando scores mais precisos e justos.
-
-Relatórios e Interface Resultados apresentados com gráficos comparativos (histograma de score e gráfico pizza das violações) e relatório detalhado por URL, incluindo os trechos de código HTML das não conformidades para facilitar a priorização das correções.
 
 **Metodologia**
 Pontuação calculada por penalidade escalonada, considerando não apenas a existência, mas também o volume de violações — gerando scores mais precisos e justos.
@@ -516,7 +505,7 @@ else:
 # =============================================================================
 st.markdown("---")
 st.caption(
-    "net60 • Análise Técnica WCAG 2.1/2.2 com axe-core • "
+    "net60 • Análise Técnica WCAG 2.2 com axe-core • "
     "Evidências HTML extraídas por violação • "
     "Score com penalidade escalonada por volume de ocorrências • "
     "Interface otimizada para relatórios de acessibilidade digital."
