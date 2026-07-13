@@ -49,6 +49,9 @@
 #    - meta-viewport            (peso: 0.19)
 #    - color-contrast           (peso: 0.17)
 #    - label                    (peso: 0.15)
+
+#    Os indicadores abaixo foram descartados do processamento após a realização de testes
+#    de identificação com páginas de HTML de teste. 
 #    - aria-input-field-name    (peso: 0.13)
 #    - target-size              (peso: 0.13)
 #    - color-contrast-enhanced  (peso: 0.10)
@@ -78,14 +81,14 @@ import re
 # =============================================================================
 
 PESOS_WCAG = {
-    "meta-viewport": 0.19,
-    "color-contrast": 0.17,
-    "label": 0.15,
-    "aria-input-field-name": 0.13,
-    "target-size": 0.13,
-    "color-contrast-enhanced": 0.10,
-    "target-size-enhanced": 0.08,
-    "autocomplete-valid": 0.05,
+    "meta-viewport": 0.38,
+    "color-contrast": 0.33,
+    "label": 0.29,
+    # "aria-input-field-name": 0.13,
+    # "target-size": 0.13,
+    # "color-contrast-enhanced": 0.10,
+    # "target-size-enhanced": 0.08,
+    # "autocomplete-valid": 0.05,
 }
 
 
@@ -223,7 +226,9 @@ def analyze_site(url: str) -> Dict[str, Any]:
 
             # Injeta axe-core
             page.add_script_tag(
-                url="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js"
+                url="https://unpkg.com/axe-core@4.11.4/axe.min.js"
+            # page.add_script_tag(
+                # url="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js"
             )
             page.wait_for_function("() => typeof axe !== 'undefined'", timeout=20000)
 
@@ -233,7 +238,7 @@ def analyze_site(url: str) -> Dict[str, Any]:
                     return await axe.run(document, {
                         runOnly: {
                             type: 'tag',
-                            values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']
+                            values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa','wcag22a', 'wcag22aa']
                         }
                     });
                 })()
