@@ -46,9 +46,9 @@
 #
 # INDICADORES AVALIADOS
 # ---------------------
-#    - meta-viewport            (peso: 0.19)
-#    - color-contrast           (peso: 0.17)
-#    - label                    (peso: 0.15)
+#    - meta-viewport            (peso: 0.38)
+#    - color-contrast           (peso: 0.33)
+#    - label                    (peso: 0.29)
 
 #    Os indicadores abaixo foram descartados do processamento após a realização de testes
 #    de identificação com páginas de HTML de teste. 
